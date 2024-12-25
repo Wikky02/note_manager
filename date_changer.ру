@@ -1,1 +1,13 @@
+created_date = input("Введите дату создания заметки в формате ДД-ММ-ГГГГ (например: 25-12-2024): ")
+try:
+    day, month, year = created_date.split('-')
+    print(f"Дата создания заметки: {day}-{month}")
+except ValueError:
+    print("Неверный формат даты. Используйте формат ДД-ММ-ГГГГ.")
 
+deadline_date = input("Введите дату истечения заметки (дедлайн) в формате ДД-ММ-ГГГГ (например: 25-12-2024): ")
+try:
+    day, month, year = deadline_date.split('-')
+    print(f"Дата истечения заметки (дедлайн): {day}-{month}")
+except ValueError:
+    print("Неверный формат даты. Используйте формат ДД-ММ-ГГГГ.")
